@@ -1,9 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from '../app';
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('turbolinks:load', () => {
   ReactDOM.render(
-    <div>Hello Spotcode :)</div>,
-    document.getElementById('root'),
+    <App />,
+    document.getElementById('root')
   )
 })
